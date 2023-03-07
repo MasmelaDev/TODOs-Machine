@@ -6,11 +6,19 @@
     color: #444;
     display: flex;
     font-size: 1.2em;
-    height: 80px;
+    min-height: 80px;
     align-items: center;
+    gap: 10px;
     justify-content: space-between;
     padding: 10px;
     margin: 18px 0;
+}
+.TodoItem div{
+    width: 80%;
+    text-align: center;
+}
+.todoItem__text{
+    word-wrap: break-word;
 }
 .icon{
     cursor: pointer;

@@ -6,7 +6,9 @@ function TodoItem(props){
         <li className={`TodoItem ${props.completed && "active"}`}>
             <span onClick={props.onToggleComplete} 
             className={`icon iconCheck ${props.completed && "iconCheck--active"}`} ></span>
-            <p className={` todoItem__text ${props.completed && "todoItem__text--active"}`}>{props.text}</p>
+            <div>
+                <p className={` todoItem__text ${props.completed && "todoItem__text--active"}`}>{props.text}</p>
+            </div>
             <span onClick={props.onDelete} className="icon iconDelete" ></span>
         </li>
     );
