@@ -1,0 +1,40 @@
+.LoadingTodo-container {
+
+    width: 100%;
+    background-color: #777;
+    border-radius: 10px;
+
+    height: 80px;
+
+    padding: 10px;
+    margin: 18px 0;
+  }
+  
+
+  
+
+  
+.LoadingTodo-container
+ {
+    opacity: 0;
+    animation: loadingAnimation 1s;
+  }
+  
+  @keyframes loadingAnimation {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: .5;
+    }
+    50% {
+      opacity: 1;
+    }
+    75% {
+        
+       opacity: .5;
+    }
+    100%{
+        opacity: 0;
+    }
+  }

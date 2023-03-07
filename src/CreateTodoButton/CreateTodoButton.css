@@ -1,0 +1,27 @@
+.CreateTodoButton{
+    cursor: pointer;
+    align-self: flex-end;
+    width: 50px;
+    height: 50px;
+    margin: auto 20px 10px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    color: #444;
+    z-index: 99;
+    background-color: #2FAC97;
+    display: flex;
+    color: #eee;
+    align-items: center;
+    justify-content: center;
+}
+.CreateTodoButton::after{
+    content: "+";
+    font-size: 2em;
+
+}
+.CreateTodoButton.active::after{
+    content: "✖";
+    font-size: 1.6em;
+
+}

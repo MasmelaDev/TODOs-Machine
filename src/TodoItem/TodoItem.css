@@ -1,0 +1,34 @@
+.TodoItem{
+    width: 100%;
+    background-color: #eee;
+    border-radius: 10px;
+    font-weight: 600;
+    color: #444;
+    display: flex;
+    font-size: 1.2em;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 18px 0;
+}
+.icon{
+    cursor: pointer;
+}
+.iconDelete::after{
+    content: "❌";
+}
+.iconCheck::after{
+    content: "⚪";
+}
+.iconCheck--active::after{
+    content: "🟢";
+}
+.todoItem__text--active{
+    text-decoration: line-through;
+}
+.TodoItem.active{
+    background-color: #B1F0CC;
+    /* background: #2FAC97; */
+    /* color: #222; */
+}
